@@ -1,6 +1,9 @@
-<meta http-equiv="refresh" content="60" >
-
 <?php
+	// Twitter BOT group - 2014
+	// Simon, Tessa & Coral	
+
+	// echo <meta http-equiv="refresh" content="60" >;   uncomment this -> auto refresh this BOT script every 1 minutes
+
 	echo "<p><font color=blue>Twitter BOT was activated.</font></p>";
 	
 			// grab new tweets from Twitter API #askDPLA	
@@ -57,7 +60,7 @@
 								echo "</div>";
 							}
 					
-					// Respond to the person have asked					
+					// Respond to the person have asked		- coming soon			
 			  
 			}
 ?>
