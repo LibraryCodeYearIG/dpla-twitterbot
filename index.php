@@ -22,10 +22,10 @@
 			
 			require_once 'twitteroauth/twitteroauth.php';
 			 
-			define('CONSUMER_KEY', 'hx2ahPuCxDUBJsHQ9P5Zw');
-			define('CONSUMER_SECRET', 'SAEjUeen05hZrdVIXJXNxVTiQkxWX5IY97FpGnnAULU');
-			define('ACCESS_TOKEN', '56239365-wKKZvlUDq1UTz8ljTU3iizT0x6dVoKHukgHQMDe4k');
-			define('ACCESS_TOKEN_SECRET', 'UBSYFhMCpYdrXPBjPRNmivRL668hwida66LeeRY0gw2gg');
+			define('CONSUMER_KEY', 'put_CONSUMER_KEY_here');
+			define('CONSUMER_SECRET', 'put_CONSUMER_SECRET_here');
+			define('ACCESS_TOKEN', 'put_ACCESS_TOKEN_here');
+			define('ACCESS_TOKEN_SECRET', 'put_ACCESS_TOKEN_SECRET_here');
 			 
 			function search(array $query)
 			{
