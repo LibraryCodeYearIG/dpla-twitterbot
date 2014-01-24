@@ -55,7 +55,21 @@
 								echo "<div style='margin-left: 12px; background-color: #EEE; padding: 5px;'>";
 					 
 								foreach ( $json_output->docs as $doc ) {
-									echo "<h3>{$doc->sourceResource->title}</h3>";                                       
+									if (is_array($doc->sourceResource->title)) {
+										echo "<h3>".$doc->sourceResource->title[0]." (";
+										if (is_array($doc->sourceResource->creator)) {
+											echo $doc->sourceResource->creator[0].")</h3>";
+										} else {
+											echo $doc->sourceResource->creator.")</h3>";
+										}
+									} else {
+										echo "<h3>".$doc->sourceResource->title." (";
+										if (is_array($doc->sourceResource->creator)) {
+											echo $doc->sourceResource->creator[0].")</h3>";
+										} else {
+											echo $doc->sourceResource->creator.")</h3>";
+										} 
+									}
 								}
 								echo "</div>";
 							}
