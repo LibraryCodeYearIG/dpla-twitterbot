@@ -53,6 +53,7 @@
 							if (!empty($json_output->docs)) {
 								echo "<h2>Items from DPLA containing: ".$keyword."</h2>";
 								echo "<div style='margin-left: 12px; background-color: #EEE; padding: 5px;'>";
+								
 					 
 								foreach ( $json_output->docs as $doc ) {
 									if (is_array($doc->sourceResource->title)) {
@@ -74,7 +75,34 @@
 								echo "</div>";
 							}
 					
-					// Respond to the person have asked		- coming soon			
-			  
-			}
+					// Respond to the person have asked		- coming soon	
+					
+						// ini_set('display_errors', 1);
+						// require_once('TwitterAPIExchange.php');
+
+						// /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+						// $settings = array(
+							// 'oauth_access_token' => "",
+							// 'oauth_access_token_secret' => "",
+							// 'consumer_key' => "",
+							// 'consumer_secret' => ""
+						// );
+
+						// /** URL for REST request, see: https://dev.twitter.com/docs/api/1.1/ **/
+						// $url = 'https://api.twitter.com/1.1/blocks/create.json';
+						// $requestMethod = 'POST';
+
+						// /** POST fields required by the URL above. See relevant docs as above **/
+						// $postfields = array(
+							// 'screen_name' => $user, 
+							// 'status' => $doc->sourceResource->title; 
+						// );
+
+						// /** Perform a POST request and echo the response **/
+						// $twitter = new TwitterAPIExchange($settings);
+						// echo $twitter->buildOauth($url, $requestMethod)
+									 // ->setPostfields($postfields)
+									 // ->performRequest();
+									 
+			}  // for reach
 ?>
