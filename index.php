@@ -1,10 +1,22 @@
+
+<head>
+<style type="text/css">
+.auto-style1 {
+	color: #4EDA4E;
+}
+</style>
+</head>
+
+<img alt="" height="245" src="bot.jpg" width="179" align="top">
+<span class="auto-style1"><strong>&nbsp;TWITTER BOT VER 1.0</strong></span>
+
 <?php
 	// Twitter BOT group - 2014
 	// Simon, Tessa & Coral	
 
 	// echo <meta http-equiv="refresh" content="60" >;   uncomment this -> auto refresh this BOT script every 1 minutes
 
-	echo "<p><font color=blue>Twitter BOT was activated.</font></p>";
+	echo "<p><font color=blue>Twitter BOT was activated ...</font></p>";
 	
 			// grab new tweets from Twitter API #askDPLA	
 			
